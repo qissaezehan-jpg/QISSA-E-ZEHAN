@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Sparkles, Volume2, Share2, RefreshCw, Heart, Moon, Flame, BookOpen, Compass, HelpCircle, Feather } from 'lucide-react';
 import { FAMOUS_ASHAAR, FeaturedSher } from '../data/poetryDatabase';
 import { ambienceEngine } from '../utils/audioAmbience';
-import { QissaZehanLogo } from './QissaZehanLogo';
 
 interface HeroSectionProps {
   fontPreference: string;
@@ -167,9 +166,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </button>
         </div>
 
-        {/* Official Brand Logo: قصۂ ذہن — QISSA-E-ZEHAN */}
-        <div className="my-4">
-          <QissaZehanLogo size="lg" showTagline={true} />
+        {/* Official brand banner — displayed in its original proportions without cropping */}
+        <div className="my-5 sm:my-7 overflow-hidden rounded-2xl border border-amber-700/40 bg-black shadow-[0_24px_70px_rgba(0,0,0,0.95)]">
+          <img
+            src="/qissa-e-zehan-banner.jpg"
+            alt="قصۂ ذہن — Qissa-e-Zehan official banner"
+            className="block h-auto w-full object-contain"
+          />
         </div>
 
         {/* ============================================================== */}

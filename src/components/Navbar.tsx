@@ -135,7 +135,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full relative flex-shrink-0 group-hover:scale-105 transition-transform">
               <div className="absolute inset-0 rounded-full bg-amber-500/20 blur-md group-hover:bg-amber-500/35 transition-all" />
               <img
-                src="/logo.svg"
+                src="/qissa-e-zehan-logo.jpg"
                 alt="قصۂ ذہن — Qissa-e-Zehan Logo"
                 className="w-full h-full object-contain relative z-10 drop-shadow-[0_2px_10px_rgba(217,119,6,0.55)]"
               />

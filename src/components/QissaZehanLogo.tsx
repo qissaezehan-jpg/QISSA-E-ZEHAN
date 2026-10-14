@@ -39,7 +39,7 @@ export const QissaZehanLogo: React.FC<QissaZehanLogoProps> = ({
       <div className={`relative ${emblemSizes[size]} group cursor-pointer ${className}`}>
         <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-amber-600/30 via-yellow-500/20 to-amber-700/30 blur-md group-hover:blur-xl transition-all" />
         <img
-          src="/logo.svg"
+          src="/qissa-e-zehan-logo.jpg"
           alt="قصۂ ذہن — Qissa-e-Zehan Logo"
           className="w-full h-full object-contain relative z-10 drop-shadow-[0_8px_24px_rgba(217,119,6,0.45)] group-hover:scale-102 transition-transform duration-300"
         />
@@ -57,7 +57,7 @@ export const QissaZehanLogo: React.FC<QissaZehanLogoProps> = ({
         <div className={`relative ${emblemSizes[size]} flex-shrink-0 group`}>
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-amber-600/35 via-yellow-500/25 to-amber-700/35 blur-lg group-hover:blur-2xl transition-all" />
           <img
-            src="/logo.svg"
+            src="/qissa-e-zehan-logo.jpg"
             alt="قصۂ ذہن — Qissa-e-Zehan Official Logo Emblem"
             className="w-full h-full object-contain relative z-10 drop-shadow-[0_8px_32px_rgba(217,119,6,0.55)] group-hover:scale-102 transition-transform duration-300"
           />
