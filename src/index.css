@@ -155,6 +155,104 @@ body {
   .qe-main .py-20 { padding-top: 1.75rem; padding-bottom: 1.75rem; }
 }
 
+/* Desktop library layout: a framed navigation rail on the left. */
+@media (min-width: 1280px) {
+  .qe-navbar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: 294px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 1px solid rgba(226, 174, 79, 0.48);
+    border-bottom: 0;
+    box-shadow: 18px 0 60px rgba(0, 0, 0, 0.62), inset -1px 0 rgba(255, 215, 137, 0.06);
+  }
+
+  .qe-navbar > div:first-child {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 294px;
+    height: 4px;
+  }
+
+  .qe-navbar-inner {
+    width: 100%;
+    padding: 1.25rem 1rem 1.5rem;
+  }
+
+  .qe-navbar-primary {
+    height: auto;
+    min-height: calc(100vh - 2.75rem);
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .qe-navbar-primary > div:first-child {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0.35rem 0.35rem 1rem;
+    border-bottom: 1px solid rgba(226, 174, 79, 0.22);
+  }
+
+  .qe-navbar-primary > div:first-child img {
+    width: 58px;
+    height: 58px;
+    border-radius: 999px;
+    border: 1px solid rgba(226, 174, 79, 0.55);
+  }
+
+  .qe-nav-list {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.4rem;
+  }
+
+  .qe-nav-button {
+    width: 100%;
+    min-height: 46px;
+    justify-content: flex-start;
+    padding-inline: 0.9rem;
+    border-color: rgba(120, 83, 33, 0.24);
+    background: linear-gradient(100deg, rgba(24, 17, 8, 0.74), rgba(5, 5, 5, 0.68));
+  }
+
+  .qe-nav-button:hover {
+    transform: translateX(3px);
+    border-color: rgba(226, 174, 79, 0.5);
+  }
+
+  .qe-nav-tools {
+    width: 100%;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(226, 174, 79, 0.2);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .qe-nav-tools > * {
+    justify-self: center;
+  }
+
+  .qe-main,
+  .qe-shell > footer {
+    margin-left: 294px;
+  }
+
+  .qe-hero-inner,
+  .qe-feature-grid,
+  .qe-shell .max-w-7xl {
+    max-width: 82rem;
+  }
+}
+
 /* Custom scrollbars & subtle manuscript textures */
 ::-webkit-scrollbar {
   width: 8px;

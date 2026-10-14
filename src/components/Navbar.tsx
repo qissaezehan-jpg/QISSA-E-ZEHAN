@@ -124,7 +124,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Main Bar */}
       <div className="qe-navbar-inner max-w-7xl mx-auto px-3 sm:px-6 lg:px-8" ref={dropdownRef}>
-        <div className="flex items-center justify-between h-[72px] gap-2 sm:gap-4">
+        <div className="qe-navbar-primary flex items-center justify-between h-[72px] gap-2 sm:gap-4">
           
           {/* Left: Brand Logo & Title: Qissa-e-Zehan */}
           <div 
@@ -157,7 +157,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           {/* Desktop Primary Navigation Items */}
-          <nav className="hidden xl:flex items-center gap-1">
+          <nav className="qe-nav-list hidden xl:flex items-center gap-1">
             {navItems.slice(0, 6).map((item) => {
               const Icon = item.icon;
               const isActive = activeTab === item.id;
@@ -362,7 +362,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           {/* Right Action Tools: Search, Font Switcher, Tanpura Drone, Streak, Favorites, Mobile Menu */}
-          <div className="flex items-center gap-1.5 sm:gap-2.5 flex-shrink-0">
+          <div className="qe-nav-tools flex items-center gap-1.5 sm:gap-2.5 flex-shrink-0">
             
             {/* Search Input Toggle */}
             <div className="relative">
