@@ -1,0 +1,6 @@
+{
+  "name": "QISSA-E-ZEHAN — Urdu Poetry & Literature Arts",
+  "description": "An immersive digital sanctuary for classical Urdu poetry, living questions, timeless conversations, and literary heritage (Qissa-e-Zehan).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
