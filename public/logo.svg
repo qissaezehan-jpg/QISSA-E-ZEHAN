@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Gold Metallic Gradients -->
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#f7d070"/>
+      <stop offset="25%" stopColor="#d49b28"/>
+      <stop offset="50%" stopColor="#fae596"/>
+      <stop offset="75%" stopColor="#b37812"/>
+      <stop offset="100%" stopColor="#e5b842"/>
+    </linearGradient>
+
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#fff2b2"/>
+      <stop offset="40%" stopColor="#e6b33a"/>
+      <stop offset="70%" stopColor="#be8217"/>
+      <stop offset="100%" stopColor="#8c5806"/>
+    </linearGradient>
+
+    <radialGradient id="lanternCandleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#fffbeb" stopOpacity="1"/>
+      <stop offset="25%" stopColor="#fde047" stopOpacity="0.9"/>
+      <stop offset="55%" stopColor="#f59e0b" stopOpacity="0.6"/>
+      <stop offset="80%" stopColor="#b45309" stopOpacity="0.2"/>
+      <stop offset="100%" stopColor="#000000" stopOpacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="deskAmbient" cx="48%" cy="42%" r="48%">
+      <stop offset="0%" stopColor="#452705" stopOpacity="0.75"/>
+      <stop offset="45%" stopColor="#1f1103" stopOpacity="0.6"/>
+      <stop offset="85%" stopColor="#090603" stopOpacity="0.95"/>
+      <stop offset="100%" stopColor="#040302" stopOpacity="1"/>
+    </radialGradient>
+
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="flameGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Deep Obsidian Background Circle -->
+  <circle cx="250" cy="250" r="242" fill="url(#deskAmbient)" />
+
+  <!-- Outer Double Gold Ring -->
+  <circle cx="250" cy="250" r="242" fill="none" stroke="url(#goldBorder)" stroke-width="4.5"/>
+  <circle cx="250" cy="250" r="234" fill="none" stroke="url(#goldBorder)" stroke-width="1.8" opacity="0.85"/>
+  <circle cx="250" cy="250" r="230" fill="none" stroke="url(#goldBorder)" stroke-width="0.75" stroke-dasharray="3,3" opacity="0.6"/>
+
+  <!-- Subtle star dust particles in background -->
+  <g fill="#fde047" opacity="0.45">
+    <circle cx="180" cy="140" r="1.5"/>
+    <circle cx="210" cy="115" r="1.2"/>
+    <circle cx="270" cy="110" r="1.4"/>
+    <circle cx="310" cy="135" r="1.8"/>
+    <circle cx="350" cy="170" r="1.2"/>
+    <circle cx="370" cy="210" r="1.5"/>
+    <circle cx="160" cy="210" r="1"/>
+    <circle cx="195" cy="175" r="1.5"/>
+  </g>
+
+  <!-- Golden Tree of Knowledge (Sprawling in background) -->
+  <g stroke="url(#goldBorder)" stroke-linecap="round" opacity="0.65" fill="none">
+    <!-- Trunk -->
+    <path d="M 270 240 Q 285 200 295 170 Q 305 140 310 110" stroke-width="5"/>
+    <path d="M 285 200 Q 320 185 365 175" stroke-width="3"/>
+    <path d="M 295 170 Q 275 145 255 125" stroke-width="2.5"/>
+    <path d="M 310 140 Q 335 120 370 105" stroke-width="2"/>
+    <path d="M 310 110 Q 300 85 285 65" stroke-width="2"/>
+    <path d="M 310 110 Q 330 85 355 70" stroke-width="1.8"/>
+    <path d="M 275 145 Q 240 140 215 130" stroke-width="1.8"/>
+    <path d="M 285 170 Q 260 180 235 170" stroke-width="1.5"/>
+    <!-- Twigs and Foliage Dots -->
+    <g fill="url(#goldBorder)" stroke="none" opacity="0.75">
+      <circle cx="375" cy="100" r="3"/>
+      <circle cx="360" cy="65" r="2.5"/>
+      <circle cx="325" cy="70" r="3"/>
+      <circle cx="280" cy="60" r="2.5"/>
+      <circle cx="250" cy="80" r="2"/>
+      <circle cx="215" cy="125" r="3"/>
+      <circle cx="380" cy="170" r="2.5"/>
+      <circle cx="350" cy="130" r="3"/>
+      <circle cx="330" cy="160" r="2.5"/>
+      <circle cx="305" cy="95" r="2"/>
+      <circle cx="270" cy="115" r="2.5"/>
+    </g>
+  </g>
+
+  <!-- Contemplative Profile Silhouette Outline of the Mind (Left) -->
+  <path d="M 175 315 C 150 300 135 270 130 230 C 125 180 145 130 185 95 C 220 65 265 55 310 60 C 275 60 235 72 205 98 C 175 124 158 165 160 205 C 160 215 158 225 150 232 C 142 240 138 245 142 255 C 145 262 140 268 135 275 C 132 280 135 285 140 290 C 145 295 152 298 158 300 C 168 305 172 312 175 315 Z"
+        fill="none" stroke="url(#goldBorder)" stroke-width="3" filter="url(#goldGlow)"/>
+  <path d="M 175 315 C 150 300 135 270 130 230 C 125 180 145 130 185 95 C 220 65 265 55 310 60"
+        fill="none" stroke="#fef08a" stroke-width="1.5" opacity="0.9"/>
+
+  <!-- Radiant Lantern Glow Behind the Lamp -->
+  <circle cx="235" cy="175" r="95" fill="url(#lanternCandleGlow)"/>
+
+  <!-- Ornate Mughal Hanging/Table Lantern -->
+  <g transform="translate(200, 95)" filter="url(#goldGlow)">
+    <!-- Finial Ring & Spire -->
+    <circle cx="35" cy="10" r="8" fill="none" stroke="url(#goldBorder)" stroke-width="2.5"/>
+    <path d="M 35 18 L 35 28" stroke="url(#goldBorder)" stroke-width="3"/>
+    
+    <!-- Ornate Dome Head -->
+    <path d="M 18 36 C 25 24 45 24 52 36 Z" fill="url(#goldBorder)" stroke="#1a1202" stroke-width="1"/>
+    <rect x="15" y="36" width="40" height="5" rx="2" fill="url(#goldBorder)"/>
+    
+    <!-- Lantern Glass Cage Structure -->
+    <polygon points="17,41 53,41 58,95 12,95" fill="#140a02" stroke="url(#goldBorder)" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Inner Radiant Candle & Flame -->
+    <ellipse cx="35" cy="78" rx="7" ry="2" fill="#d49b28"/>
+    <rect x="30" y="72" width="10" height="18" fill="#fef08a" opacity="0.9"/>
+    <!-- Glowing Flame Shape -->
+    <path d="M 35 52 C 40 60 42 66 35 73 C 28 66 30 60 35 52 Z" fill="#ffffff" filter="url(#flameGlow)"/>
+    <path d="M 35 55 C 38 61 40 66 35 72 C 30 66 32 61 35 55 Z" fill="#fde047"/>
+
+    <!-- Intricate Lattice Glass Bars -->
+    <line x1="26" y1="41" x2="23" y2="95" stroke="url(#goldBorder)" stroke-width="1.8"/>
+    <line x1="44" y1="41" x2="47" y2="95" stroke="url(#goldBorder)" stroke-width="1.8"/>
+    <path d="M 17 41 Q 35 55 53 41" fill="none" stroke="url(#goldBorder)" stroke-width="1.2"/>
+    <path d="M 14 68 Q 35 80 56 68" fill="none" stroke="url(#goldBorder)" stroke-width="1.2"/>
+    <path d="M 12 95 Q 35 105 58 95" fill="none" stroke="url(#goldBorder)" stroke-width="1.5"/>
+
+    <!-- Lantern Base -->
+    <path d="M 10 95 L 60 95 L 64 105 L 6 105 Z" fill="url(#goldBorder)"/>
+    <rect x="12" y="105" width="46" height="4" rx="1.5" fill="url(#goldBorder)"/>
+  </g>
+
+  <!-- Open Manuscript Book (بیاض) -->
+  <g transform="translate(105, 235)">
+    <!-- Book Shadow -->
+    <path d="M 25 78 Q 140 65 240 78 Q 235 90 140 85 Q 30 90 25 78 Z" fill="#050301" opacity="0.9"/>
+
+    <!-- Left Page -->
+    <path d="M 140 68 Q 80 50 25 60 L 30 78 Q 85 68 140 85 Z" fill="#d9b66c" stroke="#543708" stroke-width="1.2"/>
+    <path d="M 140 66 Q 80 48 27 58 L 29 64 Q 85 54 140 72 Z" fill="#f2db9b" opacity="0.8"/>
+    <!-- Left Page Faint Calligraphy Lines -->
+    <g stroke="#785318" stroke-width="1.2" opacity="0.65" stroke-linecap="round">
+      <line x1="42" y1="62" x2="128" y2="57"/>
+      <line x1="40" y1="68" x2="130" y2="63"/>
+      <line x1="38" y1="74" x2="132" y2="69"/>
+    </g>
+
+    <!-- Right Page -->
+    <path d="M 140 68 Q 200 50 255 60 L 250 78 Q 195 68 140 85 Z" fill="#e8c87d" stroke="#543708" stroke-width="1.2"/>
+    <path d="M 140 66 Q 200 48 253 58 L 251 64 Q 195 54 140 72 Z" fill="#fcedb8" opacity="0.85"/>
+    <!-- Right Page Faint Calligraphy Lines -->
+    <g stroke="#785318" stroke-width="1.2" opacity="0.65" stroke-linecap="round">
+      <line x1="152" y1="57" x2="238" y2="62"/>
+      <line x1="150" y1="63" x2="240" y2="68"/>
+      <line x1="148" y1="69" x2="242" y2="74"/>
+    </g>
+
+    <!-- Center Spine Crease -->
+    <path d="M 140 68 L 140 85" stroke="#3b2304" stroke-width="2.5"/>
+  </g>
+
+  <!-- Antique Inkpot (دوات) -->
+  <g transform="translate(345, 245)" filter="url(#goldGlow)">
+    <ellipse cx="25" cy="38" rx="28" ry="12" fill="#080502"/>
+    <!-- Pot Body -->
+    <path d="M 5 35 Q 2 20 12 14 Q 25 10 38 14 Q 48 20 45 35 Q 40 46 25 46 Q 10 46 5 35 Z"
+          fill="url(#goldBorder)" stroke="#2b1a03" stroke-width="1.5"/>
+    <!-- Pot Rim -->
+    <ellipse cx="25" cy="14" rx="14" ry="5" fill="#170d01" stroke="url(#goldBorder)" stroke-width="1.8"/>
+    <!-- Ink Hole -->
+    <ellipse cx="25" cy="14" rx="9" ry="3" fill="#050301"/>
+    <!-- Carved Floral Band on Inkpot -->
+    <path d="M 7 28 Q 25 34 43 28" fill="none" stroke="#2b1902" stroke-width="1.5"/>
+  </g>
+
+  <!-- Majestic Quill Feather (پر والا قلم) leaning right into inkpot -->
+  <g transform="translate(320, 130)" filter="url(#goldGlow)">
+    <!-- Feather Plume Vane -->
+    <path d="M 3 175 Q 35 110 75 40 Q 82 25 90 5 Q 82 45 68 115 Q 52 165 3 175 Z"
+          fill="url(#goldBorder)" stroke="#382203" stroke-width="1"/>
+    <!-- Delicate Barbs Cutouts -->
+    <path d="M 50 90 L 40 102 M 65 55 L 53 70 M 35 130 L 25 142" stroke="#523204" stroke-width="1.5"/>
+    
+    <!-- Central Quill Shaft (Rachis) -->
+    <path d="M 3 175 Q 45 105 90 5" fill="none" stroke="#fff8db" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Quill Nib Tip going down to inkpot -->
+    <path d="M 3 175 L -4 195 L -2 196 L 3 175" fill="#fde047" stroke="#241401" stroke-width="0.8"/>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- GOLD CALLIGRAPHY: "قصۂ ذہن"                                     -->
+  <!-- ============================================================== -->
+  <g transform="translate(0, 310)" filter="url(#goldGlow)">
+    <!-- Beautiful authentic representation of the Nastaliq title -->
+    <text x="250" y="75"
+          direction="rtl"
+          text-anchor="middle"
+          font-family="'Noto Nastaliq Urdu', 'Gulzar', 'Amiri', serif"
+          font-size="64"
+          font-weight="bold"
+          fill="url(#goldText)"
+          stroke="#422502"
+          stroke-width="1.2">
+      قصۂ ذہن
+    </text>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- FILIGREE DIVIDER & ENGLISH SUBTITLE                             -->
+  <!-- ============================================================== -->
+  <g transform="translate(0, 410)">
+    <!-- Upper Filigree Ornament -->
+    <g stroke="url(#goldBorder)" fill="none" stroke-width="1.5" stroke-linecap="round" opacity="0.85">
+      <path d="M 180 5 Q 215 15 240 5 Q 250 0 260 5 Q 285 15 320 5"/>
+      <circle cx="250" cy="5" r="3" fill="url(#goldBorder)"/>
+      <circle cx="225" cy="8" r="1.5" fill="url(#goldBorder)"/>
+      <circle cx="275" cy="8" r="1.5" fill="url(#goldBorder)"/>
+    </g>
+
+    <!-- English Text: Q I S S A - E - Z E H A N -->
+    <text x="250" y="28"
+          text-anchor="middle"
+          font-family="'Playfair Display', Georgia, serif"
+          font-size="16"
+          font-weight="600"
+          letter-spacing="9"
+          fill="url(#goldBorder)">
+      QISSA-E-ZEHAN
+    </text>
+
+    <!-- Lower Symmetrical Filigree Flourish -->
+    <g stroke="url(#goldBorder)" fill="none" stroke-width="1.2" opacity="0.75" stroke-linecap="round">
+      <path d="M 200 44 Q 230 52 250 44 Q 270 52 300 44"/>
+      <circle cx="250" cy="44" r="2" fill="url(#goldBorder)"/>
+      <line x1="160" y1="44" x2="195" y2="44"/>
+      <line x1="305" y1="44" x2="340" y2="44"/>
+    </g>
+  </g>
+</svg>

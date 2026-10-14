@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-nastaliq: "Noto Nastaliq Urdu", serif;
+  --font-gulzar: "Gulzar", serif;
+  --font-amiri: "Amiri", serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+@layer utilities {
+  .font-nastaliq {
+    font-family: var(--font-nastaliq);
+    line-height: 2.2;
+  }
+  .font-gulzar {
+    font-family: var(--font-gulzar);
+    line-height: 2.0;
+  }
+  .font-amiri {
+    font-family: var(--font-amiri);
+    line-height: 1.8;
+  }
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+html, body {
+  background-color: #000000;
+  color: #f5f5f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scrollbars & subtle manuscript textures */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Poetic Sher text selection style */
+::selection {
+  background: rgba(217, 119, 6, 0.45);
+  color: #fef3c7;
+}
+
+/* Paper gold border glow and rich lighting effects */
+.gold-glow {
+  box-shadow: 0 0 35px -5px rgba(217, 119, 6, 0.25), 0 0 15px -2px rgba(245, 158, 11, 0.12);
+}
+
+.gold-glow-lg {
+  box-shadow: 0 0 60px -10px rgba(217, 119, 6, 0.35), 0 20px 45px -15px rgba(0, 0, 0, 1);
+}
+
+.damask-pattern {
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(217, 119, 6, 0.04) 1px, transparent 1px),
+    radial-gradient(circle at 0% 100%, rgba(180, 83, 9, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px, 48px 48px;
+}
+
+.manuscript-vignette {
+  background: radial-gradient(circle at 50% 10%, #0a0a0a 0%, #040404 45%, #000000 100%);
+}
