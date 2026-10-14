@@ -216,7 +216,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-stone-100 flex flex-col font-sans selection:bg-amber-600/30 selection:text-amber-200 manuscript-vignette relative">
+    <div className="qe-shell min-h-screen bg-black text-stone-100 flex flex-col font-sans selection:bg-amber-600/30 selection:text-amber-200 manuscript-vignette relative">
       
       {/* Deep black atmospheric base backdrop */}
       <div className="fixed inset-0 bg-black pointer-events-none" />
@@ -251,7 +251,7 @@ export default function App() {
       />
 
       {/* Main Body Content */}
-      <main className="flex-1">
+      <main className="qe-main flex-1">
         
         {/* Dedicated Daily Sher Tab */}
         {activeTab === 'daily-sher' && (
@@ -300,13 +300,13 @@ export default function App() {
             />
 
             {/* AI Capabilities Spotlight: Live Voice (gemini-3.8-live) & Google Search Grounding (gemini-3.5-flash) */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-10">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="qe-feature-grid max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 
                 {/* Card 1: Live Voice Conversation (gemini-3.8-live) */}
                 <div 
                   onClick={() => { setActiveTab('live-voice'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className="group bg-gradient-to-br from-[#0e0e0e] via-[#060606] to-[#000000] border border-amber-600/40 hover:border-amber-400/80 rounded-3xl p-6 sm:p-8 transition-all hover:shadow-[0_20px_50px_rgba(0,0,0,0.9)] cursor-pointer flex flex-col justify-between gold-glow relative overflow-hidden"
+                  className="qe-feature-card group bg-gradient-to-br from-[#191107] via-[#080604] to-[#000000] border border-amber-600/40 hover:border-amber-400/80 rounded-3xl p-6 sm:p-8 transition-all hover:shadow-[0_20px_50px_rgba(0,0,0,0.9)] cursor-pointer flex flex-col justify-between gold-glow relative overflow-hidden"
                 >
                   <div className="absolute top-0 right-0 w-36 h-36 bg-amber-500/10 rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform blur-sm" />
                   
@@ -338,7 +338,7 @@ export default function App() {
                 {/* Card 2: Google Search Grounding (gemini-3.5-flash) */}
                 <div 
                   onClick={() => { setActiveTab('search-grounding'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className="group bg-gradient-to-br from-[#080d14] via-[#04070a] to-[#000000] border border-sky-600/40 hover:border-sky-400/80 rounded-3xl p-6 sm:p-8 transition-all hover:shadow-[0_20px_50px_rgba(0,0,0,0.9)] cursor-pointer flex flex-col justify-between relative overflow-hidden"
+                  className="qe-feature-card group bg-gradient-to-br from-[#091722] via-[#04090d] to-[#000000] border border-sky-600/40 hover:border-sky-400/80 rounded-3xl p-6 sm:p-8 transition-all hover:shadow-[0_20px_50px_rgba(0,0,0,0.9)] cursor-pointer flex flex-col justify-between relative overflow-hidden"
                 >
                   <div className="absolute top-0 right-0 w-36 h-36 bg-sky-500/10 rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform blur-sm" />
 

@@ -118,13 +118,13 @@ export const Navbar: React.FC<NavbarProps> = ({
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-black/95 backdrop-blur-md border-b border-stone-850 text-stone-100 shadow-2xl transition-all">
+    <header className="qe-navbar sticky top-0 z-50 bg-black/95 backdrop-blur-md border-b border-stone-850 text-stone-100 shadow-2xl transition-all">
       {/* Top ornamental golden accent line with subtle shimmer */}
       <div className="h-1 bg-gradient-to-r from-amber-800 via-amber-400 via-yellow-300 via-amber-500 to-amber-900 shadow-sm" />
 
       {/* Main Bar */}
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8" ref={dropdownRef}>
-        <div className="flex items-center justify-between h-20 gap-2 sm:gap-4">
+      <div className="qe-navbar-inner max-w-7xl mx-auto px-3 sm:px-6 lg:px-8" ref={dropdownRef}>
+        <div className="flex items-center justify-between h-[72px] gap-2 sm:gap-4">
           
           {/* Left: Brand Logo & Title: Qissa-e-Zehan */}
           <div 
@@ -165,7 +165,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <button
                   key={item.id}
                   onClick={() => setActiveTab(item.id)}
-                  className={`px-2.5 py-1.5 rounded-lg text-sm font-medium transition-all flex items-center gap-1.5 relative ${
+                  className={`qe-nav-button px-3 py-2 rounded-xl text-sm font-medium transition-all flex items-center gap-1.5 relative ${
                     isActive
                       ? 'text-amber-300 bg-amber-950/70 border border-amber-600/50 shadow-inner'
                       : 'text-stone-300 hover:text-amber-200 hover:bg-stone-900/70'

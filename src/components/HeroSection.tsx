@@ -102,7 +102,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   ];
 
   return (
-    <div className="relative overflow-hidden bg-black text-stone-100 pt-8 pb-16 md:pt-14 md:pb-24 border-b border-stone-900">
+    <div className="qe-hero relative overflow-hidden bg-black text-stone-100 pt-4 pb-10 md:pt-6 md:pb-14 border-b border-stone-900">
       
       {/* Deep Radial Vignette Base in Pure Black */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#0a0a0a] via-[#040404] to-[#000000] pointer-events-none" />
@@ -147,7 +147,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* ============================================================== */}
       {/* MAIN CONTAINER CONTENT */}
       {/* ============================================================== */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="qe-hero-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Official brand banner — first visual below the navigation */}
+        <div className="qe-brand-banner mt-1 mb-4 sm:mb-5 overflow-hidden rounded-2xl border border-amber-700/40 bg-black shadow-[0_24px_70px_rgba(0,0,0,0.95)]">
+          <img
+            src="/qissa-e-zehan-banner.jpg"
+            alt="قصۂ ذہن — Qissa-e-Zehan official banner"
+            className="block h-auto w-full object-contain"
+          />
+        </div>
         
         {/* Top Floating Utility: Lantern Glow Toggle */}
         <div className="flex items-center justify-between mb-6">
@@ -166,22 +174,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </button>
         </div>
 
-        {/* Official brand banner — displayed in its original proportions without cropping */}
-        <div className="my-5 sm:my-7 overflow-hidden rounded-2xl border border-amber-700/40 bg-black shadow-[0_24px_70px_rgba(0,0,0,0.95)]">
-          <img
-            src="/qissa-e-zehan-banner.jpg"
-            alt="قصۂ ذہن — Qissa-e-Zehan official banner"
-            className="block h-auto w-full object-contain"
-          />
-        </div>
-
         {/* ============================================================== */}
         {/* THE SCHOLAR'S DESK: Illuminated Couplet & Antique Lantern Visual */}
         {/* ============================================================== */}
-        <div className="mt-10 max-w-4xl mx-auto relative">
+        <div className="qe-masterpiece mt-7 max-w-5xl mx-auto relative">
           
           {/* Subtle Damask / Velvet Paper Border with deep dark black color */}
-          <div className="bg-gradient-to-br from-[#0d0d0d] via-[#060606] to-[#000000] border-2 border-amber-600/50 hover:border-amber-500/70 rounded-3xl p-6 sm:p-10 shadow-[0_25px_70px_rgba(0,0,0,1)] gold-glow-lg relative overflow-hidden transition-all">
+          <div className="qe-panel bg-gradient-to-br from-[#161007] via-[#070504] to-[#000000] border-2 border-amber-600/50 hover:border-amber-500/70 rounded-3xl p-5 sm:p-8 shadow-[0_25px_70px_rgba(0,0,0,1)] gold-glow-lg relative overflow-hidden transition-all">
             
             {/* Top Ornamental Filigree Strip */}
             <div className="flex items-center justify-between pb-4 border-b border-stone-850 text-xs text-amber-400/90">

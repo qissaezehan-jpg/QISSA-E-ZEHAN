@@ -33,6 +33,128 @@ html, body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+/* Qissa-e-Zehan visual system: black lacquer, antique gold and moonlit blue */
+.qe-shell {
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(180, 83, 9, 0.14), transparent 28rem),
+    radial-gradient(circle at 90% 22%, rgba(14, 116, 144, 0.10), transparent 32rem),
+    linear-gradient(180deg, #030201 0%, #000 38%, #020304 70%, #000 100%);
+}
+
+.qe-shell::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.28;
+  background-image:
+    linear-gradient(rgba(214, 164, 74, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(214, 164, 74, 0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent 80%);
+}
+
+.qe-navbar {
+  background: linear-gradient(180deg, rgba(8, 6, 3, 0.98), rgba(0, 0, 0, 0.94));
+  border-color: rgba(180, 123, 35, 0.28);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.58);
+}
+
+.qe-navbar-inner {
+  max-width: 88rem;
+}
+
+.qe-nav-button {
+  min-height: 40px;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+
+.qe-nav-button:hover {
+  border-color: rgba(217, 165, 70, 0.28);
+  transform: translateY(-1px);
+}
+
+.qe-hero {
+  background:
+    radial-gradient(circle at 15% 24%, rgba(217, 119, 6, 0.12), transparent 30rem),
+    radial-gradient(circle at 86% 18%, rgba(14, 116, 144, 0.10), transparent 30rem),
+    #000;
+}
+
+.qe-hero-inner,
+.qe-feature-grid,
+.qe-shell .max-w-7xl {
+  max-width: 88rem;
+}
+
+.qe-brand-banner {
+  position: relative;
+  background: #000;
+  border-color: rgba(226, 174, 79, 0.5);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.86), 0 0 0 1px rgba(255, 209, 116, 0.06) inset;
+}
+
+.qe-brand-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 45px rgba(0, 0, 0, 0.42);
+}
+
+.qe-panel,
+.qe-feature-card {
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 221, 156, 0.05);
+}
+
+.qe-feature-card {
+  min-height: 285px;
+}
+
+.qe-shell button,
+.qe-shell a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.qe-shell button {
+  text-wrap: balance;
+}
+
+/* Compact the long feature pages without sacrificing readability. */
+.qe-main .py-10 { padding-top: 2rem; padding-bottom: 2rem; }
+.qe-main .py-12 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.qe-main .py-16 { padding-top: 3rem; padding-bottom: 3rem; }
+.qe-main .py-20 { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+.qe-main .my-10 { margin-top: 2rem; margin-bottom: 2rem; }
+.qe-main .mt-10 { margin-top: 2rem; }
+.qe-main .mt-12 { margin-top: 2.5rem; }
+.qe-main .mt-14 { margin-top: 2.75rem; }
+
+@media (max-width: 767px) {
+  .qe-navbar-inner > div:first-child { min-height: 64px; height: auto; padding-block: 6px; }
+  .qe-brand-banner { border-radius: 0.85rem; }
+  .qe-masterpiece { margin-top: 1.25rem; }
+  .qe-panel { border-radius: 1.15rem; padding: 1.1rem; }
+  .qe-feature-card { min-height: 0; border-radius: 1.15rem; padding: 1.15rem; }
+  .qe-main .py-10,
+  .qe-main .py-12,
+  .qe-main .py-16,
+  .qe-main .py-20 { padding-top: 1.75rem; padding-bottom: 1.75rem; }
+}
+
 /* Custom scrollbars & subtle manuscript textures */
 ::-webkit-scrollbar {
   width: 8px;
